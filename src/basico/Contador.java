@@ -16,7 +16,10 @@ public class Contador extends Application {
 	public void start(Stage primaryStage) throws Exception {
 
 		Label titulo = new Label("Contador");
+		titulo.getStyleClass().add("titulo");
+
 		Label numero = new Label("0");
+		numero.getStyleClass().add("numero");
 
 		Button botaoIncremento = new Button("+");
 		botaoIncremento.setOnAction(e -> {
@@ -36,16 +39,21 @@ public class Contador extends Application {
 		boxBotoes.getChildren().add(botaoDecremento);
 		boxBotoes.getChildren().add(botaoIncremento);
 
-		VBox boxp = new VBox();
-		boxp.setSpacing(10);
-		boxp.setAlignment(Pos.CENTER);
-		boxp.getChildren().add(titulo);
-		boxp.getChildren().add(numero);
-		boxp.getChildren().add(boxBotoes);
+		VBox boxconteudo = new VBox();
+		boxconteudo.getStyleClass().add("conteudo");
+		boxconteudo.setSpacing(10);
+		boxconteudo.setAlignment(Pos.CENTER);
+		boxconteudo.getChildren().add(titulo);
+		boxconteudo.getChildren().add(numero);
+		boxconteudo.getChildren().add(boxBotoes);
 
+		// TODO usar esse caminho no arquvo do campo minado para usar a
+		// imagens
 		String caminhoCss = getClass().getResource("/basico/contador.css").toExternalForm();
-		Scene cenaPrincipal = new Scene(boxp, 400, 400);
+		Scene cenaPrincipal = new Scene(boxconteudo, 400, 400);
 		cenaPrincipal.getStylesheets().add(caminhoCss);
+		cenaPrincipal.getStylesheets().add(
+				"https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:wght@100&display=swap");
 
 		primaryStage.setScene(cenaPrincipal);
 		primaryStage.show();

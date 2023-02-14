@@ -1,3 +1,14 @@
-.conteudo{
-	
+.conteudo {
+	-fx-background: black;
+	-fx-font-family: Roboto;
+}
+
+.titulo {
+	-fx-text-fill: #0069d2;
+	-fx-font-size: 28px;
+}
+
+.numero {
+	-fx-text-fill: #eee;
+	-fx-font-size: 28px;
 }
