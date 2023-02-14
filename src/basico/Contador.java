@@ -24,14 +24,16 @@ public class Contador extends Application {
 		Button botaoIncremento = new Button("+");
 		botaoIncremento.setOnAction(e -> {
 			contador++;
-			numero.setText(Integer.toString(contador));
+			attLabel(numero);
+			trocarCor(numero);
 		});
 		botaoIncremento.getStyleClass().add("botoes");
 
 		Button botaoDecremento = new Button("-");
 		botaoDecremento.setOnAction(e -> {
 			contador--;
-			numero.setText(Integer.toString(contador));
+			attLabel(numero);
+			trocarCor(numero);
 		});
 		botaoDecremento.getStyleClass().add("botoes");
 
@@ -58,6 +60,26 @@ public class Contador extends Application {
 
 		primaryStage.setScene(cenaPrincipal);
 		primaryStage.show();
+	}
+
+	private void attLabel(Label a) {
+		a.setText(Integer.toString(contador));
+
+		a.getStyleClass().remove("verde");
+		a.getStyleClass().remove("vermelho");
+	}
+
+	private void trocarCor(Label a) {
+
+		if (contador > 0) {
+			a.getStyleClass().remove("vermelho");
+			a.getStyleClass().add("verde");
+		} else if (contador < 0) {
+			a.getStyleClass().remove("verde");
+			a.getStyleClass().add("vermelho");
+		} else if (contador == 0) {
+
+		}
 	}
 
 	public static void main(String[] args) {

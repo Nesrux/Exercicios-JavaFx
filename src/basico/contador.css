@@ -10,7 +10,7 @@
 
 .numero {
 	-fx-text-fill: #eee;
-	-fx-font-size: 28px;	
+	-fx-font-size: 28px;
 }
 
 .botoes {
@@ -20,4 +20,16 @@
 	-fx-min-width: 60px;
 	-fx-min-height: 60px;
 	-fx-background-radius: 30px;
+}
+
+.verde {
+	-fx-text-fill: #39f20b;
+}
+
+.vermelho {
+	-fx-text-fill: #ff0000;
+}
+
+.padrao {
+	-fx-text-fill: #eee;
 }
