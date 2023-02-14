@@ -15,10 +15,14 @@ public class PrimeiroFx extends Application {
 		Button ba = new Button("a");
 		Button bb = new Button("B");
 		Button bc = new Button("C");
-		
-		bc.setOnAction(e ->{System.out.println("AAAAAAAAA");});
-		bb.setOnAction(e ->{System.out.println("B");});
-		ba.setOnAction(e ->System.exit(0));
+
+		bc.setOnAction(e -> {
+			System.out.println("AAAAAAAAA");
+		});
+		bb.setOnAction(e -> {
+			System.out.println("B");
+		});
+		ba.setOnAction(e -> System.exit(0));
 
 		VBox box = new VBox();
 		box.setAlignment(Pos.CENTER);
@@ -27,7 +31,11 @@ public class PrimeiroFx extends Application {
 		box.getChildren().add(bb);
 		box.getChildren().add(bc);
 
+		// TODO usar esse caminho no arquvo do campo minado para usar a
+		// imagens
+		String caminhoCss = getClass().getResource("/basico/contador.css").toExternalForm();
 		Scene cena = new Scene(box, 200, 400);
+		cena.getStylesheets().add(caminhoCss);
 
 		primaryStage.setScene(cena);
 		primaryStage.show();
