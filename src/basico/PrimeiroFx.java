@@ -15,6 +15,10 @@ public class PrimeiroFx extends Application {
 		Button ba = new Button("a");
 		Button bb = new Button("B");
 		Button bc = new Button("C");
+		
+		bc.setOnAction(e ->{System.out.println("AAAAAAAAA");});
+		bb.setOnAction(e ->{System.out.println("B");});
+		ba.setOnAction(e ->System.exit(0));
 
 		VBox box = new VBox();
 		box.setAlignment(Pos.CENTER);
