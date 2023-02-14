@@ -31,12 +31,8 @@ public class PrimeiroFx extends Application {
 		box.getChildren().add(bb);
 		box.getChildren().add(bc);
 
-		// TODO usar esse caminho no arquvo do campo minado para usar a
-		// imagens
-		String caminhoCss = getClass().getResource("/basico/contador.css").toExternalForm();
-		Scene cena = new Scene(box, 200, 400);
-		cena.getStylesheets().add(caminhoCss);
 
+		Scene cena = new Scene(box, 200, 400);
 		primaryStage.setScene(cena);
 		primaryStage.show();
 	}
