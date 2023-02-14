@@ -26,12 +26,14 @@ public class Contador extends Application {
 			contador++;
 			numero.setText(Integer.toString(contador));
 		});
+		botaoIncremento.getStyleClass().add("botoes");
 
 		Button botaoDecremento = new Button("-");
 		botaoDecremento.setOnAction(e -> {
 			contador--;
 			numero.setText(Integer.toString(contador));
 		});
+		botaoDecremento.getStyleClass().add("botoes");
 
 		HBox boxBotoes = new HBox();
 		boxBotoes.setAlignment(Pos.CENTER);
