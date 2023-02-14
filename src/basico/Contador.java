@@ -72,14 +72,10 @@ public class Contador extends Application {
 	private void trocarCor(Label a) {
 
 		if (contador > 0) {
-			a.getStyleClass().remove("vermelho");
 			a.getStyleClass().add("verde");
 		} else if (contador < 0) {
-			a.getStyleClass().remove("verde");
 			a.getStyleClass().add("vermelho");
-		} else if (contador == 0) {
-
-		}
+		} 
 	}
 
 	public static void main(String[] args) {
