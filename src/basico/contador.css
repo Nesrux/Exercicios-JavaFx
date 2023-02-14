@@ -1,23 +1,23 @@
 .conteudo {
-	-fx-background: black;
-	-fx-font-family: Roboto;
+	-fx-background-color: #000;
+	-fx-font-family: Oswald;
 }
 
 .titulo {
-	-fx-text-fill: #0069d2;
-	-fx-font-size: 28px;
+	-fx-text-fill: #48b2ee;
+	-fx-font-size: 36px;
 }
 
 .numero {
 	-fx-text-fill: #eee;
-	-fx-font-size: 28px;
+	-fx-font-size: 28px;	
 }
 
 .botoes {
 	-fx-background-color: #fff;
 	-fx-text-fill: #48b2ee;
-	-fx-font-size: 24px;
-	fx-minw-width: 60px;
+	-fx-font-size: 28px;
+	-fx-min-width: 60px;
 	-fx-min-height: 60px;
 	-fx-background-radius: 30px;
 }
