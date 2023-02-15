@@ -16,5 +16,8 @@ public class TesteBorderPane extends BorderPane {
 		
 		Caixa c4 = new Caixa().comTexto("BAIXO");
 		setBottom(c4);
+		
+		Caixa c5 = new Caixa().comTexto("CENTRO");
+		setCenter(c5);
 	}
 }
