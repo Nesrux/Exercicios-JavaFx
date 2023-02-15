@@ -10,10 +10,10 @@ public class AppLayout extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		Parent raiz = null;
-		// raiz = new TesteAncorPane();
+		raiz = new TesteAncorPane();
 		raiz = new TesteBorderPane();
+		raiz = new TesteFlowPane();
 
-		
 		Scene principal = new Scene(raiz, 800, 600);
 		primaryStage.setScene(principal);
 		primaryStage.setTitle("Testando Layout");
