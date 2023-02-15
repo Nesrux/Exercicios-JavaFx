@@ -8,6 +8,7 @@ import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
 
 public class Caixa extends HBox {
 
@@ -33,6 +34,7 @@ public class Caixa extends HBox {
 
 	public Caixa comTexto(String texto) {
 		Label label = new Label(texto);
+		label.setFont(new Font(25));
 		getChildren().add(label);
 		return this;
 	}
