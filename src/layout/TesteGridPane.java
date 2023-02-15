@@ -15,6 +15,16 @@ public class TesteGridPane extends GridPane {
 
 		setGridLinesVisible(true);
 
+		getColumnConstraints().addAll(cc(), cc(), cc(), cc(), cc());
+		getRowConstraints().addAll(rc(), rc(), rc(), rc(), rc());
+
+		// Linha/Coluna
+		add(c1, 0, 0, 2, 2);
+		add(c3, 3, 0, 3, 2);
+		add(c2, 1, 2, 3, 2);
+		add(c4, 0, 4, 5, 1);
+		add(c5, 2, 0, 1, 2);
+
 	}
 
 	private ColumnConstraints cc() {
